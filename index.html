@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title>SHOPI</title>
+    <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+</head>
+<body>
+     <div id="main">
+
+
+         <header class="header">
+             <div class="grid">
+              <!-- nav bar -->
+            <nav class="header-nav">
+                <ul class="header-nav__leftlist">
+                    <li class="header-nav__leftlist-item header-nav__leftlist-item--space">Kênh Người Bán</li>
+                    <li class="header-nav__leftlist-item header-nav__leftlist-item--space">Trở thành Người bán Shopee</li>
+                    <li class="header-nav__leftlist-item header-nav__leftlist-item--space header-nav__leftlist-item--has-qr">
+                        Tải ứng dụng
+                        <div class="header-qr">
+                            <img src="./assets/img/qr-code.png" alt="qr-code" class="header-qr__qr-code-img">
+                            <div class="app-download">
+                                <img src="./assets/img/chplay.png" alt="chplay" class="header-qr__download-img">
+                                <img src="./assets/img/appstore.png" alt="appstore" class="header-qr__download-img">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-nav__leftlist-item " style="cursor: text; color: var(--white-color);">
+                         Kết nối 
+                         <a href="#"><i class="fab fa-facebook"></i></a>
+                         <a href="#"><i class="fab fa-instagram" style="padding-left: 4px;"></i></a>
+                        </li>
+                 </ul>
+
+                <ul class="header-nav__rightlist">
+                    <li class="header-nav__rightlist-item header-nav__rightlist-item-has-notification">
+                        <i class="far fa-bell"></i>
+                        Thông Báo
+                        <div class="header-notification">
+                            <div class="header-notification__none-notification">
+                                <i class="fas fa-box-open"></i>
+                                 <h3>Đăng nhập để xem Thông Báo</h3>
+                            </div>
+                            <div class="header-notification__btn">
+                               <div class="header-notification__btn-resign">Đăng Kí</div>
+                               <div class="header-notification__btn-login">Đăng Nhập</div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-nav__rightlist-item">
+                        <i class="far fa-question-circle"></i>
+                        Hỗ Trợ
+                    </li>
+                    <li class="header-nav__rightlist-item header-nav__rightlist-item--language">
+                        <i class="fas fa-globe"></i>
+                        Tiếng Việt     
+                        <i class="fas fa-chevron-down"></i>
+                            <div class="language">
+                                <div class="language__vietnam">Tiếng Việt</div>
+                                <div class="language__english">English</div>
+                            </div>
+
+                    </li>
+                    <!-- <li class="header-nav__rightlist-item header-nav__rightlist-item--bold header-nav__rightlist-item--space">Đăng Kí</li>
+                    <li class="header-nav__rightlist-item header-nav__rightlist-item--bold">Đăng Nhập</li> -->
+                    
+                    <li class="header-nav__rightlist-item username">
+                        <img src="https://scontent.fvca1-2.fna.fbcdn.net/v/t39.30808-6/239728471_605182510651633_3408156484328906353_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=bDb7UJXp8AYAX-djuBG&_nc_oc=AQm8M1b07Oy3EosUptV2_inKsYKmAvfDcWkouPTjc83kgA-kpucCgEA3Nz_fsPnnXOQ&_nc_ht=scontent.fvca1-2.fna&oh=00_AT-VO9YbtmowIZfUjCLdBV_tbAQyX6XGgJ_0MFfz95XaDA&oe=61CB7BBE" alt="" class="header-nav__rightlist-item username-img">
+                        <span>Thành Dương</span>
+                        <ul class="user-menu">
+                            <li class="user-menu-item">Tài khoản Của Tôi</li>
+                            <li class="user-menu-item">Đơn Mua</li>
+                            <li class="user-menu-item">Đăng Xuất</li>
+                        </ul>
+                    </li>
+                </ul>
+               
+
+            </nav>
+            <div class="header-with-search">
+                <div class="header-with-search__logo">
+                 <a href="#">   <img src="./assets/img/logo.png" alt="" class="logo-img"></a>
+                </div>
+                <div class="header-with-search__container">
+                    <div class="input-and-search"> 
+                            <div class="text-search">
+                                <input placeholder="Bạn muốn mua gì" type="text" class="header-with-search__search-label-input">  
+                                <div class="search-history">
+                                    <header class="header-history">Lịch sử tìm kiếm</header>
+                                    <ul class="history-list">
+                                        <li class="history-item"><a href="#">Bàn phím cơ</a></li>
+                                        <li class="history-item"><a href="#">Pc 100 triệu</a></li>
+                                        <li class="history-item"><a href="#">Ghế gaming</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                       <div class="search-secletion">Trong Shop này <i class="fas fa-angle-down"></i> 
+                              <div class="search-secletion_in-out">
+                                <div class="search-secletion__in">Trong Shop Này <i class="fas fa-check"></i></div>
+                                <div class="search-secletion__out">Trong Shopee</div>
+                            </div>  
+                         </div>
+                       <button class="search-btn"> 
+                        <i class="fas fa-search"></i>
+                       </button>
+                   </div>
+                    <div class="header-with-search__search-label-recomend">
+                        <a href="#">Bàn phím cơ</a>
+                        <a href="#">Chuột gaming</a>
+                        <a href="#">Case Pc</a>
+                        <a href="#">Giá đỡ laptop</a>
+                        <a href="#">Crush</a>
+                    </div>
+                </div>
+                <div class=" header-with-search__cart">
+                    <a href="#">
+                    <i class="fas fa-shopping-cart">
+                        <div class="product-qlt">3</div>
+                    </i>
+                    </a>
+
+                    <!-- no product   class="cart empty-cart"-->
+
+                    <!-- <div class="cart empty-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Chưa có sản phẩm</p>
+                    </div> -->
+
+                    <!-- has product  -->
+                    <div class="non-empty-cart">
+                           <div class="non-empty-cart-header">
+                               Sản Phẩm Đã Thêm
+                           </div>
+                           <ul class="non-empty-cart-body">
+                               <li class="non-empty-cart-body-item">
+                                   <img class="product-img" src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e" alt="">
+                                    <div class="product-content">
+                                        <div class="product-content__name-and-price">
+                                            <div class="product-content__name">Bàn phím Cơ Bluetooth K950</div>
+                                            <div class="product-content__price">
+                                                <p class="prc">990.000đ </p>
+                                                <p>x</p>
+                                                <p>1</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-content__decription-and-remove">
+                                            <p>Phân loại hàng: LED FULL RGB  </p>
+                                            <p>Xóa</p>
+                                        </div>
+                                    </div>
+                               </li>
+
+                               <li class="non-empty-cart-body-item">
+                                <img class="product-img" src="https://cf.shopee.vn/file/bebfbb3df1586d2a39a8eb840a6cbb41" alt="">
+                                 <div class="product-content">
+                                     <div class="product-content__name-and-price">
+                                         <div class="product-content__name">Tai nghe beat chất lượng cao h5</div>
+                                         <div class="product-content__price">
+                                             <p class="prc">768.000đ </p>
+                                             <p>x</p>
+                                             <p>1</p>
+                                         </div>
+                                     </div>
+                                     <div class="product-content__decription-and-remove">
+                                         <p>Phân loại hàng: LED FULL RGB  </p>
+                                         <p>Xóa</p>
+                                     </div>
+                                 </div>
+                            </li>
+
+                            <li class="non-empty-cart-body-item">
+                                <img class="product-img" src="https://cf.shopee.vn/file/11375704d031acb6b63ec54f7f08550a" alt="">
+                                 <div class="product-content">
+                                     <div class="product-content__name-and-price">
+                                         <div class="product-content__name">Chuột Razer full RGB M950 </div>
+                                         <div class="product-content__price">
+                                             <p class="prc">400.000đ </p>
+                                             <p>x</p>
+                                             <p>1</p>
+                                         </div>
+                                     </div>
+                                     <div class="product-content__decription-and-remove">
+                                         <p>Phân loại hàng: LED FULL RGB  </p>
+                                         <p>Xóa</p>
+                                     </div>
+                                 </div>
+                            </li>
+
+
+                           </ul>
+                           <div class="view-cart">
+                           <button class="view-cart-btn">Xem Giỏ Hàng</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+         </header>
+
+
+
+
+
+         <div class="container">
+               <div class="grid">
+                    <div class="grid__row back"> 
+                        <i class="fas fa-chevron-left"></i>
+                        TRỞ LẠI TRANG CỦA SHOP
+                    </div>
+                   <div class="grid__row">
+                       <div class="grid__column-2 category-product">
+                           <div class="shop-info">
+                              <a href="#"> <img class="shop-info-avt" src="https://cf.shopee.vn/file/5e434e891412c148a4b0e162961420bf_tn"></img></a>
+                              <div class="shop-info-decription">
+                                <h4 class="shop-info-name">An Tech Cute</h4>
+                                <p class="shop-info-status"> Online 15p trước</p>
+                              </div>
+                           </div>
+                           <div class="category-container">
+                           <div class="category-header">DANH MỤC SHOP</div>
+                              <ul class="category-product-list"> 
+                                  <a href="#"><li class="category-product-list-item active">Sản Phẩm</li></a>
+                               <a href="#"><li class="category-product-list-item ">Thiết Bị Lưu Trữ</li></a>
+                                  <a href="#"><li class="category-product-list-item">Chuột & Bàn Phím</li></a>
+                                  <a href="#"><li class="category-product-list-item">Phụ Kiện Máy Tính</li></a>
+                                  <a href="#"><li class="category-product-list-item">Dàn Âm Thanh</li></a>
+                                 <a href="#"><li class="category-product-list-item">Tai nghe nhét tai & chụp tai</li></a>
+                                  <a href="#"><li class="category-product-list-item">On Sale</li></a>
+                              </ul>
+                            </div>
+                       </div>
+                       <div class="grid__column-10">
+                           <div class="grid-row">
+                               <div class="sort-row"> 
+                                   <div class="sort">
+                                   <span> Sắp xếp theo</span>
+                                   <button class="sort-btn active-btn">Phổ Biến </button>
+                                   <button class="sort-btn">Mới Nhất</button>
+                                   <button class="sort-btn">Bán Chạy</button>
+                                   <div class="sort-by-price"> 
+                                         <div class="sort-by-price__sub">
+                                             <div class="increase">Giá: Thấp đến Cao </div>
+                                             <div class="decrease">Giá: Cao đến Thấp </div>
+                                         </div>
+                                       <span> Giá</span>
+                                       <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                   </div>
+                                   <div class="current-page">
+                                       <div class="current"> 
+                                           <p style="color: var(--orange-color);">1</p>
+                                            <p>/8</p>
+                                         
+                                        </div>
+                                        <div>
+                                            <i class="next-btn fas fa-chevron-left"></i>
+                                            <i class="next-btn fas fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                 </div>
+                                  
+                               </div>
+                                <div class="product-main">
+                               <div class="grid-row "> 
+                                      
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Bàn phím Cơ Bluetooth K950 LED Không Dây Pin Sạc </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                <div class="product-container__price-old">
+
+                                                </div>
+                                                <div class="product-container__price-new">380.000đ - 990.000đ</div>    
+                                           </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                            <div class="sale-sticker">
+                                                <span class="value">10%</span>
+                                                <span>GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/f2796491298b62750ac3c83967d3feed_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Chuột Máy Tính, Có Led Đổi Màu V8 | 4 Màu Hồng  </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        220.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">200.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/f746787bc29c56f711e53ed970115e23_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Loa Bluetooth máy tính SADA 2.1 SUPER BASS 9D </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        560.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">599.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/6f700cce33f3eb7998604b5625279ad0_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Đầu chuyển đổi Lightning sang USB 3.0 - OTG</div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        130.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">120.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/6561097ca17b315d7a0ece696b7889d4_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Tai Nghe Chụp Tai Nhạc Có dây chơi GAME G60 </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+
+                                                 </div>
+                                                 <div class="product-container__price-new">860.000đ - 990.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                
+                        
+                           
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Bàn phím Cơ Bluetooth K950 LED Không Dây Pin Sạc </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                <div class="product-container__price-old">
+
+                                                </div>
+                                                <div class="product-container__price-new">380.000đ - 990.000đ</div>    
+                                           </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                            <div class="sale-sticker">
+                                                <span class="value">10%</span>
+                                                <span>GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/f2796491298b62750ac3c83967d3feed_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Chuột Máy Tính, Có Led Đổi Màu V8 | 4 Màu Hồng  </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        220.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">200.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/f746787bc29c56f711e53ed970115e23_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Loa Bluetooth máy tính SADA 2.1 SUPER BASS 9D </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        560.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">599.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/6f700cce33f3eb7998604b5625279ad0_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Đầu chuyển đổi Lightning sang USB 3.0 - OTG</div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        130.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">120.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/6561097ca17b315d7a0ece696b7889d4_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Tai Nghe Chụp Tai Nhạc Có dây chơi GAME G60 </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+
+                                                 </div>
+                                                 <div class="product-container__price-new">860.000đ - 990.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                        
+                            
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Bàn phím Cơ Bluetooth K950 LED Không Dây Pin Sạc </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                <div class="product-container__price-old">
+
+                                                </div>
+                                                <div class="product-container__price-new">380.000đ - 990.000đ</div>    
+                                           </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                            <div class="sale-sticker">
+                                                <span class="value">10%</span>
+                                                <span>GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/f2796491298b62750ac3c83967d3feed_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Chuột Máy Tính, Có Led Đổi Màu V8 | 4 Màu Hồng  </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        220.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">200.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/f746787bc29c56f711e53ed970115e23_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Loa Bluetooth máy tính SADA 2.1 SUPER BASS 9D </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        560.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">599.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/6f700cce33f3eb7998604b5625279ad0_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Đầu chuyển đổi Lightning sang USB 3.0 - OTG</div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+                                                        130.000đ
+                                                 </div>
+                                                 <div class="product-container__price-new">120.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-of-10">
+                                    <a href="#" class="product-container">
+                                        <img src="https://cf.shopee.vn/file/6561097ca17b315d7a0ece696b7889d4_tn" alt="" class="product-container__img">
+                                        <div class="product-container__content">
+                                            <div class="product-container__content-name">Tai Nghe Chụp Tai Nhạc Có dây chơi GAME G60 </div>
+                                            <div class="product-container__sale">
+                                                <div class="product-container__sale-value">Giảm 10kđ</div>
+                                                <div class="product-container__sale-code">Shopdacbiet</div>
+                                            </div>
+                                            <div class="product-container__price">
+                                                 <div class="product-container__price-old">
+
+                                                 </div>
+                                                 <div class="product-container__price-new">860.000đ - 990.000đ</div>    
+                                            </div>
+                                            <div class="product-container__action">
+                                                <!-- like : add class    product-container__action-like-love -->
+                                                <div class="product-container__action-like ">
+                                                    <i class="nofill far fa-heart"></i>
+                                                    <i class="fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="product-container__action-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    
+                                                </div>
+                                                <div class="product-container__action-sold">
+                                                 Đã bán 99
+                                                </div>
+
+                                            </div>
+                                            <div class="product-container__origin">TP.HCM</div>
+
+                                            <div class="favorite-sticker">
+                                                <span> Yêu Thích</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                
+                        
+                            </div>
+
+                        </div>
+                        <div class="grid-row page-change">
+                            <ul class="change-page">
+                                <li class="page-back">
+                               <a href="#"> <i class="fas fa-chevron-left"></i></a>
+                                </li>
+                                      <li class="page-num page-num--current">
+                                         1
+                                       </li>
+                                      <li class="page-num">
+                                       <a href="">2</a>  
+                                        </li>
+                                     <li class="page-num">
+                                           <a href="">3</a>
+                                            </li>
+                                     <li class="page-num">
+                                               <a href="">4</a>
+                                                </li>
+
+                                <li class="page-next">
+                                   <a href=""> <i class="fas fa-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                           </div>
+                       </div>
+                  
+                   
+                         
+                    </div>
+               </div>
+         </div>
+
+         <footer class="footer">
+                  <div class="grid footer-grid">
+                      <div class="grid-row">
+                        <div class="column-2-5"> 
+                            <h4 class="footer__header">CHĂM SÓC KHÁCH HÀNG</h4>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">Trung Tâm Trợ Giúp</li>
+                                <li class="footer__list-item">Shopee Blog</li>
+                                <li class="footer__list-item">Shopee Mall</li>
+                                <li class="footer__list-item">Hướng Dẫn Mua Hàng</li>
+                                <li class="footer__list-item">Hướng Dẫn Bán Hàng</li>
+                                <li class="footer__list-item">Thanh Toán</li>
+                                <li class="footer__list-item">Shopee Xu</li>
+                                <li class="footer__list-item">Vận Chuyển</li>
+                                <li class="footer__list-item">Trả Hàng & Hoàn Tiền</li>
+                                <li class="footer__list-item">Chăm Sóc Khách Hàng</li>
+                                <li class="footer__list-item">Chính Sách Bảo Hành</li>
+                            </ul>
+                        </div>
+                        <div class="column-2-5"> 
+                            <h4 class="footer__header">VỀ SHOPEE</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">Giới Thiệu Về Shopee Việt Nam</li>
+                                    <li class="footer__list-item">Tuyển Dụng</li>
+                                    <li class="footer__list-item">Điều Khoản Shopee</li>
+                                    <li class="footer__list-item">Chính Sách Bảo Mật</li>
+                                    <li class="footer__list-item">Chính Hãng</li>
+                                    <li class="footer__list-item">Kênh Người Bán</li>
+                                    <li class="footer__list-item">Flash Sales</li>
+                                    <li class="footer__list-item">Tiếp Thị Liên Kết Shopee</li>
+                                    <li class="footer__list-item">Liên Hệ Với Truyền Thông</li>
+                                </ul>
+                        </div>
+                        <div class="column-2-5 footer__header-pay"> 
+                            <h4 class="footer__header ">THANH TOÁN</h4>
+                             <div class="footer-pay">
+                                <img src="https://cdn-news.siamphone.com/upload/news/nw14299/featureimg.jpg" alt="">
+                                <img src="data:image/png;base64,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" alt="">
+                                <img src="data:image/jpeg;base64,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" alt="">
+                                <img src="data:image/png;base64,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" alt="">
+                                <img src="data:image/png;base64,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" alt="">
+                                
+                             </div>
+                        </div>
+                        <div class="column-2-5 "> 
+                            <h4 class="footer__header">THEO DÕI CHÚNG TÔI TRÊN</h4>
+                                <ul class="footer__follow-list">
+                                    <li class="footer__follow-list-item"><a href="https://www.facebook.com/thanhduong.nguyen.75457081">
+                                        <i class="fab fa-facebook"></i>
+                                        Facebook</a></li>
+                                    <li class="footer__follow-list-item"><a href="https://www.instagram.com/thanh_duong1311/">
+                                        <i class="fab fa-instagram"></i>
+                                        Instagram</a></li>
+                                    <li class="footer__follow-list-item"><a href="https://www.linkedin.com/in/th%C3%A0nh-d%C6%B0%C6%A1ng-nguy%E1%BB%85n-608171229/">
+                                        <i class="fab fa-linkedin"></i>
+                                        LinkedIn</a></li>
+                                </ul>
+                        </div>
+                        <div class="column-2-5"> 
+                            <h4 class="footer__header ">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h4>
+                                <div class="footer-download">
+                                    <img class="footer__download-qr" src="./assets/img/qr-code.png"></img>
+                                <div class="footer-download-app">
+                                    <img class="footer-app" src="./assets/img/chplay.png" alt="">
+                                    <img class="footer-app" src="./assets/img/appstore.png" alt="">
+                                </div>
+                                </div>
+                        </div>
+                      </div>
+                      <div class="grid-row">
+                          <div class="copy-right">
+                              p© 2015 - Bản quyền thuộc về NTD
+                          </div>
+                      </div>
+                  </div>
+         </footer>
+     </div>
+          <!-- modal login shopee -->
+    
+            <div class="modal__register">
+                 
+                      <div class="modal__container-register">
+                          <div class="modal__container-register-header">Đăng Kí</div>
+                          <div class="modal__container-register-body">
+                            <div class="modal__container-register-form">
+                                <input type="number" placeholder="Số điện thoại">
+                            </div>
+                            <div class="modal__container-register-btn">
+                                <span>TIẾP THEO</span>
+                            </div>
+                            <span class="or">hoặc</span>
+                            <div class="modal__container-register-social-login">
+                                <div class="facebook">
+                                    <i class="fab fa-facebook"></i>
+                                   <a href=""> Facebook</a>
+                                </div>
+                                <div class="google">
+                                    <i class="fab fa-google"></i>
+                                  <a href="">  Google</a>
+                                </div>
+                                <div class="apple">
+                                    <i class="fab fa-apple"></i>
+                                   <a href=""> Apple</a>
+                                </div>
+                            </div>
+                            <div class="modal__container-register-law">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về 
+                                <a href="#">Điều khoản dịch vụ </a>
+                                &
+                                <a href="#">Chính sách bảo mật</a>
+                            </div>
+                          </div>
+                          <div class="have-account">
+                              Bạn đã có tài khoản? 
+                                <a href="">Đăng Nhập</a>
+                          </div>
+                      </div>
+                  
+            </div>
+    
+
+    
+        <div class="modal__login">
+             
+                  <div class="modal__container-login">
+                       
+                  </div>
+        </div>
+
+
+</body>
+</html>
