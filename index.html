@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,500;1,700&display=swap" rel="stylesheet">
 
@@ -18,9 +20,9 @@
 
 
          <header class="header">
-             <div class="grid">
+                     <div class="grid wide">
               <!-- nav bar -->
-            <nav class="header-nav">
+            <nav class="header-nav hide-on-tablet-mobile ">
                 <ul class="header-nav__leftlist">
                     <li class="header-nav__leftlist-item header-nav__leftlist-item--space">Kênh Người Bán</li>
                     <li class="header-nav__leftlist-item header-nav__leftlist-item--space">Trở thành Người bán Shopee</li>
@@ -88,10 +90,15 @@
 
             </nav>
             <div class="header-with-search">
-                <div class="header-with-search__logo">
+                <label for="mobile-search-checkbox" class="header-mobile-search ">
+                    <i class="mobile-search-icon fas fa-search"></i>
+
+                </label>
+                <div class="header-with-search__logo hide-on-tablet">
                  <a href="#">   <img src="./assets/img/logo.png" alt="" class="logo-img"></a>
                 </div>
-                <div class="header-with-search__container">
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header-search-checkbox">
+                <div class="header-with-search__container ">
                     <div class="input-and-search"> 
                             <div class="text-search">
                                 <input placeholder="Bạn muốn mua gì" type="text" class="header-with-search__search-label-input">  
@@ -114,7 +121,7 @@
                         <i class="fas fa-search"></i>
                        </button>
                    </div>
-                    <div class="header-with-search__search-label-recomend">
+                    <div class="header-with-search__search-label-recomend hide-on-tablet-mobile">
                         <a href="#">Bàn phím cơ</a>
                         <a href="#">Chuột gaming</a>
                         <a href="#">Case Pc</a>
@@ -206,6 +213,29 @@
                 </div>
             </div>
           </div>
+          <ul class="header__sort">
+              <li class="header__sort-item">
+                  <a href="" class="header__sort-link">
+                      Liên quan
+                  </a>
+                </li>
+              <li class="header__sort-item space">
+                  <a href="" class="header__sort-link">
+                      Mới nhất
+                  </a>
+                </li>
+              <li class="header__sort-item space">
+                  <a href="" class="header__sort-link">
+                      Bán chạy
+                  </a>
+                </li>
+              <li class="header__sort-item space">
+                  <a href="" class="header__sort-link">
+                      Giá 
+                      <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+          </ul>
          </header>
 
 
@@ -213,13 +243,66 @@
 
 
          <div class="container">
-               <div class="grid">
-                    <div class="grid__row back"> 
+               <div class="grid wide">
+                    <nav class="caterogy-mobile">
+                        <ul class="mobile-caterogy-list">
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai </a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                            <li class="mobile-caterogy-list-item">
+                                <a href="" class="mobile-caterogy-link">Tai nghe nhét tai & chụp tai</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="grid__row back-to-shop hide-on-tablet-mobile"> 
                         <i class="fas fa-chevron-left"></i>
                         TRỞ LẠI TRANG CỦA SHOP
                     </div>
                    <div class="grid__row">
-                       <div class="grid__column-2 category-product">
+                       <div class="col l-2 m-0 c-0 category-product">
                            <div class="shop-info">
                               <a href="#"> <img class="shop-info-avt" src="https://cf.shopee.vn/file/5e434e891412c148a4b0e162961420bf_tn"></img></a>
                               <div class="shop-info-decription">
@@ -240,9 +323,9 @@
                               </ul>
                             </div>
                        </div>
-                       <div class="grid__column-10">
-                           <div class="grid-row">
-                               <div class="sort-row"> 
+                       <div class="col l-10 m-12 c-12">
+                           <div class="row">
+                               <div class="sort-row hide-on-tablet-mobile"> 
                                    <div class="sort">
                                    <span> Sắp xếp theo</span>
                                    <button class="sort-btn active-btn">Phổ Biến </button>
@@ -272,9 +355,9 @@
                                   
                                </div>
                                 <div class="product-main">
-                               <div class="grid-row "> 
+                               <div class="row "> 
                                       
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -322,7 +405,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/f2796491298b62750ac3c83967d3feed_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -361,7 +444,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/f746787bc29c56f711e53ed970115e23_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -405,7 +488,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/6f700cce33f3eb7998604b5625279ad0_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -444,7 +527,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/6561097ca17b315d7a0ece696b7889d4_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -491,7 +574,7 @@
                                 
                         
                            
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -539,7 +622,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/f2796491298b62750ac3c83967d3feed_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -578,7 +661,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/f746787bc29c56f711e53ed970115e23_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -622,7 +705,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/6f700cce33f3eb7998604b5625279ad0_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -661,7 +744,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/6561097ca17b315d7a0ece696b7889d4_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -707,7 +790,7 @@
                                 
                         
                             
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/4e913192e9866a3cfd30b922c5df855e_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -755,7 +838,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/f2796491298b62750ac3c83967d3feed_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -794,7 +877,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/f746787bc29c56f711e53ed970115e23_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -838,7 +921,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/6f700cce33f3eb7998604b5625279ad0_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -877,7 +960,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-of-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-container">
                                         <img src="https://cf.shopee.vn/file/6561097ca17b315d7a0ece696b7889d4_tn" alt="" class="product-container__img">
                                         <div class="product-container__content">
@@ -926,7 +1009,7 @@
                             </div>
 
                         </div>
-                        <div class="grid-row page-change">
+                        <div class="row page-change">
                             <ul class="change-page">
                                 <li class="page-back">
                                <a href="#"> <i class="fas fa-chevron-left"></i></a>
@@ -959,9 +1042,9 @@
          </div>
 
          <footer class="footer">
-                  <div class="grid footer-grid">
-                      <div class="grid-row">
-                        <div class="column-2-5"> 
+                  <div class="grid wide footer-grid">
+                      <div class="row">
+                        <div class="col l-2-4 m-6 c-6 text-center"> 
                             <h4 class="footer__header">CHĂM SÓC KHÁCH HÀNG</h4>
                             <ul class="footer__list">
                                 <li class="footer__list-item">Trung Tâm Trợ Giúp</li>
@@ -977,7 +1060,7 @@
                                 <li class="footer__list-item">Chính Sách Bảo Hành</li>
                             </ul>
                         </div>
-                        <div class="column-2-5"> 
+                        <div class="col l-2-4 m-6 c-6 text-center"> 
                             <h4 class="footer__header">VỀ SHOPEE</h4>
                                 <ul class="footer__list">
                                     <li class="footer__list-item">Giới Thiệu Về Shopee Việt Nam</li>
@@ -991,7 +1074,7 @@
                                     <li class="footer__list-item">Liên Hệ Với Truyền Thông</li>
                                 </ul>
                         </div>
-                        <div class="column-2-5 footer__header-pay"> 
+                        <div class="col l-2-4 m-6 c-6 text-center footer__header-pay"> 
                             <h4 class="footer__header ">THANH TOÁN</h4>
                              <div class="footer-pay">
                                 <img src="https://cdn-news.siamphone.com/upload/news/nw14299/featureimg.jpg" alt="">
@@ -1002,7 +1085,7 @@
                                 
                              </div>
                         </div>
-                        <div class="column-2-5 "> 
+                        <div class="col l-2-4 m-6 c-6 text-center "> 
                             <h4 class="footer__header">THEO DÕI CHÚNG TÔI TRÊN</h4>
                                 <ul class="footer__follow-list">
                                     <li class="footer__follow-list-item"><a href="https://www.facebook.com/thanhduong.nguyen.75457081">
@@ -1016,7 +1099,7 @@
                                         LinkedIn</a></li>
                                 </ul>
                         </div>
-                        <div class="column-2-5"> 
+                        <div class="col l-2-4 m-6 c-6 text-center"> 
                             <h4 class="footer__header ">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h4>
                                 <div class="footer-download">
                                     <img class="footer__download-qr" src="./assets/img/qr-code.png"></img>
@@ -1027,7 +1110,7 @@
                                 </div>
                         </div>
                       </div>
-                      <div class="grid-row">
+                      <div class="row">
                           <div class="copy-right">
                               p© 2015 - Bản quyền thuộc về NTD
                           </div>

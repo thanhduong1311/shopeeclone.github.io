@@ -1,4 +1,7 @@
 /* VAR */
+#main {
+    overflow: hidden;
+}
 :root{
     --white-color:#fff;
     --black-color: #000;
@@ -22,11 +25,7 @@ html{
 }
 
 /* for RESPONSIVE */
-.grid{ 
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
+
 .grid__row {
     display: flex;
     flex-wrap: wrap;
@@ -47,9 +46,7 @@ html{
     width: 20%;
 }
 
-.full-width{
-    width: 100%;
-}
+
 .two-col{
     width: 50%;
 }
